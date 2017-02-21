@@ -2,6 +2,8 @@
 
 ## Get Started
 
+For more info, please see the [Medium post](https://medium.com/@blewpri/sharing-logic-between-ionic2-apps-f06feaf51fad#.2twsjq9ka) that accompanies this repo.
+
 ### 1. Install & link dependencies
 
 For our **shared** package:
