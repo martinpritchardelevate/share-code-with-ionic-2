@@ -2,6 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { AppStateModule } from './app.state.module';
 
 @NgModule({
   declarations: [
@@ -9,6 +10,7 @@ import { HomePage } from '../pages/home/home';
     HomePage
   ],
   imports: [
+    AppStateModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
