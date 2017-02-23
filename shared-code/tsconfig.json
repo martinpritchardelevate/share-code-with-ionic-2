@@ -15,9 +15,7 @@
     "typeRoots": [
       "../node_modules/@types"
     ],
-    "types" : [
-      "core-js"
-    ]
+    "types" : []
   },
   "include": [
     "src/**/*.ts"
