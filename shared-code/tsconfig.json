@@ -11,6 +11,12 @@
     "lib": [
       "dom",
       "es2015"
+    ],
+    "typeRoots": [
+      "../node_modules/@types"
+    ],
+    "types" : [
+      "core-js"
     ]
   },
   "include": [
@@ -20,12 +26,6 @@
     "node_modules",
     "dist"
   ],
-  "typeRoots": [
-      "../node_modules/@types"
-    ],
-    "types" : [
-      "core-js"
-    ],
   "compileOnSave": false,
   "atom": {
     "rewriteTsconfig": false
