@@ -3,14 +3,16 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AppStateModule } from './app.state.module';
+import { SharedComponentsModule } from 'shared-code';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage
-  ],
+  ], 
   imports: [
-    AppStateModule,
+     AppStateModule,
+     SharedComponentsModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -18,6 +20,8 @@ import { AppStateModule } from './app.state.module';
     MyApp,
     HomePage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
+  ]
 })
 export class AppModule {}
