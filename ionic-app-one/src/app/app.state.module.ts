@@ -1,12 +1,14 @@
 import { NgModule }      from '@angular/core';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { TestActions, testReducer } from 'shared-code';
+import { TestActions, testReducer, TestEffects } from 'shared-code';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
 	exports: [],
-	imports:      [
-		StoreModule.provideStore({
+	imports: [
+		EffectsModule.run(TestEffects),
+		StoreModule.provideStore({  
 			test: testReducer
 		}),
 		StoreDevtoolsModule.instrumentOnlyWithExtension()
