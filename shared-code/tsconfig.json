@@ -1,31 +1,24 @@
 {
   "compilerOptions": {
     "module": "es2015",
-    "moduleResolution": "node",
     "target": "es5",
+    "moduleResolution": "node",
     "sourceMap": true,
     "declaration": true,
     "noImplicitAny": false,
     "experimentalDecorators": true,
-	  "outDir": "./dist",
-    "lib": [
-      "dom",
-      "es2015"
-    ],
-    "typeRoots": [
-      "../node_modules/@types"
-    ],
-    "types" : []
+    "lib": ["dom", "es2015"],
+    "outDir": "./dist",
+    "types": [
+      "node"
+    ]
   },
-  "include": [
-    "src/**/*.ts"
-  ],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "scripts"
   ],
-  "compileOnSave": false,
-  "atom": {
-    "rewriteTsconfig": false
+  "angularCompilerOptions": {
+    "genDir": "aot"
   }
 }

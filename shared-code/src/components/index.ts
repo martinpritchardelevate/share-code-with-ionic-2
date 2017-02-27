@@ -1,0 +1,1 @@
+export { TestSharedComponent } from './test/test.shared.component';
